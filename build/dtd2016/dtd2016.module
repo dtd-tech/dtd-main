@@ -5,5 +5,29 @@
  * Module file for dtd2016.
  */
 
- use Drupal\Component\Utility\Unicode;
- use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Block\BlockPluginInterface;
+
+/**
+ * Function to check if we're on the virtual machine.
+ */
+
+function virtwhat() {
+  # Check if the virt-what binary exists.
+  $virtwhatbin = '/usr/sbin/virt-what'
+  if (file_exists($virtwhatbin)) {
+    $virtwhatcmd = 'sudo ' $virtwhatbin;
+    # Check if we're in a virtual machine.
+    $virtwhat = exec($virtwhatcmd);
+  }
+  return $virtwhat;
+}
+
+/**
+ * Function to determine the external IP address.
+ */
+function ext_ip() {
+  $ext_ip_cmd="/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'";
+  $ext_ip = exec ($ext_ip_cmd);
+  return $ext_ip;
+}
