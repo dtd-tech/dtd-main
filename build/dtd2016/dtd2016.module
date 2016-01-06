@@ -14,9 +14,9 @@ use Drupal\Core\Block\BlockPluginInterface;
 
 function virtwhat() {
   # Check if the virt-what binary exists.
-  $virtwhatbin = '/usr/sbin/virt-what'
+  $virtwhatbin = '/usr/sbin/virt-what';
   if (file_exists($virtwhatbin)) {
-    $virtwhatcmd = 'sudo ' $virtwhatbin;
+    $virtwhatcmd = 'sudo ' . $virtwhatbin;
     # Check if we're in a virtual machine.
     $virtwhat = exec($virtwhatcmd);
   }

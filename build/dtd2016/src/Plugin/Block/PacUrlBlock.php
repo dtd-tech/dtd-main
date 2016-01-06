@@ -11,24 +11,14 @@
 namespace Drupal\dtd2016\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormStateInterface;
 
 class PacUrlBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
   public function build() {
-    $virtwhat = virtwhat();
-    if ($virtwhat) {
-      $ext_ip = ext_ip();
-      $pacbaseurl = 'http://' . $ext_ip . '/';
-    }
-    else {
-      $pacbaseurl = 'http:' . $_SERVER['HTTP_HOST'] . '/';
-    }
-    $pacurl = $pac_baseurl . 'dtd.pac';
-    return array(
-      '#markup' => $this->t('PAC URL: ":pacurl"', ':pacurl' => $pacurl),
-    );
+    // Return the form @ Form/PacUrlForm.php
+    return \Drupal::formBuilder()->getForm('Drupal\dtd2016\Form\PacUrlForm');
   }
 }
-?>
