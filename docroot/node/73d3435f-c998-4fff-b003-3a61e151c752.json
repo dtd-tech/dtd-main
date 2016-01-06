@@ -1,0 +1,135 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/help?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/book"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/book\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json",
+                "lang": "nl"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/book\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "uuid": [
+        {
+            "value": "73d3435f-c998-4fff-b003-3a61e151c752"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "book"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "nl",
+            "lang": "nl"
+        }
+    ],
+    "title": [
+        {
+            "value": "Hulp na installatie",
+            "lang": "nl"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/book\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbf31b60-dfc7-441e-af00-f303ded7eb3f"
+                    }
+                ],
+                "lang": "nl"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/book\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "dbf31b60-dfc7-441e-af00-f303ded7eb3f"
+                    }
+                ]
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": "1",
+            "lang": "nl"
+        }
+    ],
+    "created": [
+        {
+            "value": "1444926751",
+            "lang": "nl"
+        }
+    ],
+    "changed": [
+        {
+            "value": "1444927675",
+            "lang": "nl"
+        }
+    ],
+    "promote": [
+        {
+            "value": "0",
+            "lang": "nl"
+        }
+    ],
+    "sticky": [
+        {
+            "value": "0",
+            "lang": "nl"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "1444926825"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": "1",
+            "lang": "nl"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": "1",
+            "lang": "nl"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Deze verzameling paginas helpen je bij het instellen van je browser en andere hulp programmas nadat je deze Drupal leeromgeving succesvol hebt&nbsp;ge\u00efnstalleerd. De hulp is verdeeld&nbsp;per platform en browser.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "nl"
+        }
+    ]
+}
