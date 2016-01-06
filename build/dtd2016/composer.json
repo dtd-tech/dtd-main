@@ -1,0 +1,6 @@
+{
+    "name": "drupal/dtd2016",
+    "description": "This module handles customisations for the Drupal Training Day environment landing page.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+"
+}

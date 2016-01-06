@@ -1,0 +1,8 @@
+# Log of all actions taken to build this site.
+
+* Drupal 8 Core.
+* Installed using standard profile
+* Dutch locale
+* Disabled contact,rdf,search
+* Enabled Book module
+* Disabled search block.
