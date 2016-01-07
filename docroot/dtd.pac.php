@@ -7,7 +7,7 @@
 # First some headers to make it's correctly handled by browsers.
 header("Content-type: application/x-ns-proxy-autoconfig");
 header("Cache-Control: no-cache, must-revalidate");
-header("Expires: Sun, 26 Apr 1981 11:16:00 GMT");
+header("Expires: Sun, 26 Apr 1981 05:00:00 GMT");
 ?>
 // select on the URL
 function FindProxyForURL(url, host){
