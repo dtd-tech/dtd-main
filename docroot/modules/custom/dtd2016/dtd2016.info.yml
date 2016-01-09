@@ -1,0 +1,6 @@
+name: DTD2016
+description: Drupal Training Day 2016 customisations.
+package: Custom
+
+type: module
+core: 8.x
