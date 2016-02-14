@@ -683,7 +683,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 #   include __DIR__ . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'dtd2016',
+  'database' => 'dtd',
   'username' => 'dtd',
   'password' => 'dtd',
   'prefix' => '',
